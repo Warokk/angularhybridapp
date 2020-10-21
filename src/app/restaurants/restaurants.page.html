@@ -1,0 +1,65 @@
+<ion-content>
+  <ion-header class="ion-no-border">
+    <ion-title>
+      Nos restaurants partenaires
+    </ion-title>
+  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <p class="restaurants-desc">
+        <span>Tous les restaurants partenaires avec le bateau de Thibault</span>
+        <span>06.63.99.99.78</span>
+        <span>lebateaudethibault@gmail.com</span>
+        <span>www.facebook.com/lebateaudethibault</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="restaurants-button-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button (click)="openRestaurantWithNameBistrotDesGascons()">
+            <ion-icon slot="start" name="pin"></ion-icon>
+            <ion-label>Bistrot des Gascons</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button (click)="openRestaurantWithNameLesFousDeLile()">
+            <ion-icon slot="start" name="pin"></ion-icon>
+            <ion-label>Les fous de l'île</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button (click)="openRestaurantWithNameBistrotLandais()">
+            <ion-icon slot="start" name="pin"></ion-icon>
+            <ion-label>Bistrot Landais</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button (click)="openRestaurantWithNameVilla9Trois()">
+            <ion-icon slot="start" name="pin"></ion-icon>
+            <ion-label>Villa 9-Trois</ion-label>
+          </ion-item> 
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button (click)="openRestaurantWithNameBistrotDuSommelier()">
+            <ion-icon slot="start" name="pin"></ion-icon>
+            <ion-label>Bistrot du Sommelier</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button routerLink="/restaurants">
+            <ion-icon slot="start" name="call"></ion-icon>
+            <ion-label>Devenez partenaires !</ion-label>
+          </ion-item> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+   
+</ion-content>

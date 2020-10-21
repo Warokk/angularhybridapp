@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { DataResolverService } from './resolver/data-resolver.service';
 
 const routes: Routes = [
   {
@@ -14,6 +15,43 @@ const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'bateaux',
+    loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
+  },
+  {
+    path: 'restaurants',
+    loadChildren: () => import('./restaurants/restaurants.module').then( m => m.RestaurantsPageModule)
+  },
+  {
+    path: 'recettes',
+    loadChildren: () => import('./recettes/recettes.module').then( m => m.RecettesPageModule)
+  },
+  {
+    path: 'bateau',
+    loadChildren: () => import('./bateau/bateau.module').then( m => m.BateauPageModule)
+  },
+  {
+    path: 'bateau/:id',
+    resolve: {
+      special: DataResolverService
+    },
+    loadChildren: () => import('./bateau/bateau.module').then( m => m.BateauPageModule)
+  },
+  {
+    path: 'restaurant/:id',
+    resolve: {
+      special: DataResolverService
+    },
+    loadChildren: () => import('./restaurant/restaurant.module').then( m => m.RestaurantPageModule)
+  },
+  {
+    path: 'recette/:id',
+    resolve: {
+      special: DataResolverService
+    },
+    loadChildren: () => import('./recette/recette.module').then( m => m.RecettePageModule)
   },
 ];
 

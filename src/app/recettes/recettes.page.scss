@@ -1,0 +1,25 @@
+.recettes-desc span{
+    display: block;
+}
+p{
+    text-align: center;
+    color: black;
+    padding: 2em;
+}
+ion-card{
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 2em 0 2em 0;
+}
+
+.recettes-button-card ion-item{
+    --background: rgba(0, 0, 0, 0.4);
+}
+ion-title{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+ion-header{
+    padding:2em;
+}

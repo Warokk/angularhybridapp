@@ -1,0 +1,65 @@
+<ion-content>
+  <ion-header class="ion-no-border">
+    <ion-title>
+      Nos bateaux partenaires
+    </ion-title>
+  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <p class="bateaux-desc">
+        <span>Toutes les eaux mènent à Thibault</span>
+        <span>06.63.99.99.78</span>
+        <span>lebateaudethibault@gmail.com</span>
+        <span>www.facebook.com/lebateaudethibault</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="bateaux-button-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button (click)="openBoatWithNameDeLaBrise()">
+            <ion-icon slot="start" name="Link"></ion-icon>
+            <ion-label>De la Brise</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button (click)="openBoatWithNameSaphir()">
+            <ion-icon slot="start" name="Link"></ion-icon>
+            <ion-label>Saphir</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button (click)="openBoatWithNameGastMicher()">
+            <ion-icon slot="start" name="Link"></ion-icon>
+            <ion-label>Gast Micher</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6" (click)="openBoatWithNameAquilon()">
+          <ion-item button>
+            <ion-icon slot="start" name="Link"></ion-icon>
+            <ion-label>Aquilon</ion-label>
+          </ion-item> 
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button routerLink="/contact">
+            <ion-icon slot="start" name="call"></ion-icon>
+            <ion-label>Contact</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button routerLink="/contact">
+            <ion-icon slot="start" name="call"></ion-icon>
+            <ion-label>Contact</ion-label>
+          </ion-item> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+   
+</ion-content>
