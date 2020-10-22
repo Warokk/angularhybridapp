@@ -53,6 +53,11 @@ const routes: Routes = [
     },
     loadChildren: () => import('./recette/recette.module').then( m => m.RecettePageModule)
   },
+  {
+    path: 'cat-produits',
+    loadChildren: () => import('./cat-produits/cat-produits.module').then( m => m.CatProduitsPageModule)
+  },
+
 ];
 
 @NgModule({
