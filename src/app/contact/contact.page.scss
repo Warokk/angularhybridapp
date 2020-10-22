@@ -1,0 +1,20 @@
+ion-card-header{
+    align-items: center;
+}
+ion-card-header ion-img{
+    width: 50%;
+    display: block;
+}
+.contact-desc span{
+    display: block;
+}
+p{
+    text-align: center;
+    color: black;
+    padding: 2em;
+}
+ion-card{
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 2em 0 2em 0;
+}

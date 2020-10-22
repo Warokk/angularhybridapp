@@ -1,0 +1,65 @@
+<ion-content>
+  <ion-header class="ion-no-border">
+    <ion-title>
+      Nos recettes
+    </ion-title>
+  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <p class="recettes-desc">
+        <span>Toutes les recettes du bateau de Thibault</span>
+        <span>06.63.99.99.78</span>
+        <span>lebateaudethibault@gmail.com</span>
+        <span>www.facebook.com/lebateaudethibault</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="recettes-button-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button (click)="openRecipeWithNameHomard()">
+            <ion-icon slot="start" name="fish"></ion-icon>
+            <ion-label>Homard</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button (click)="openRecipeWithNameStJacques()">
+            <ion-icon slot="start" name="fish"></ion-icon>
+            <ion-label>St Jacques</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button (click)="openRecipeWithNameBar()">
+            <ion-icon slot="start" name="fish"></ion-icon>
+            <ion-label>Bar</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button (click)="openRecipeWithNameTourteau()">
+            <ion-icon slot="start" name="fish"></ion-icon>
+            <ion-label>Tourteau</ion-label>
+          </ion-item> 
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item button routerLink="/recettes">
+            <ion-icon slot="start" name="restaurant"></ion-icon>
+            <ion-label>Recettes</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item button routerLink="/recettes">
+            <ion-icon slot="start" name="restaurant"></ion-icon>
+            <ion-label>Recettes</ion-label>
+          </ion-item> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+   
+</ion-content>
