@@ -14,7 +14,7 @@ export class CatProduitsPage implements OnInit {
     category:0
   };
   coquillage = {
-    name: 'Coquillage',
+    name: 'Coquillages',
     category: 1
   };
   crustaces = {

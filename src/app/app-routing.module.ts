@@ -63,7 +63,11 @@ const routes: Routes = [
       special: DataResolverService
     },
     loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
+  },  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
   },
+
 
 
 ];
