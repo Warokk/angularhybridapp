@@ -1,0 +1,14 @@
+[
+    {
+        "id": 9,
+        "name": "Araignées",
+        "category": 2,
+        "price": 7.0,
+        "unit": "kg",
+        "availability": false,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Hors saison,  pêche aux casiers",
+        "owner": "tig"
+    }
+]
