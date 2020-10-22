@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cat-produits',
@@ -7,9 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatProduitsPage implements OnInit {
 
-  constructor() { }
+  poissons = {
+    name: 'Poissons',
+    category:0
+  };
+  coquillage = {
+    name: 'Coquillage',
+    category: 1
+  };
+  crustaces = {
+    name: 'Crustacés',
+    category: 2
+  };
+  constructor(private router: Router, private dataService: DataService) { }
 
   ngOnInit() {
+  }
+
+  openCatWithNamePoissons() {
+    this.dataService.setData(13, this.poissons);
+    this.router.navigateByUrl('/product/13');
+  }
+  openCatWithNameCoquillages() {
+    this.dataService.setData(14, this.coquillage);
+    this.router.navigateByUrl('/product/14');
+  }
+  openCatWithNameCrustaces() {
+    this.dataService.setData(15, this.crustaces);
+    this.router.navigateByUrl('/product/15');
   }
 
 }

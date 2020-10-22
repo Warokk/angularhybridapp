@@ -1,15 +1,15 @@
 <ion-content>
   <app-cart-header></app-cart-header>
-  <ion-header>
+  <ion-header class="ion-no-border">
     <ion-title>
       Choisissez vos produits
     </ion-title>
   </ion-header>
-  <ion-card>
+  <ion-card class="products-buttons-card">
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-item button>
+          <ion-item button (click)="openBoatWithNamePoissons()">
             <ion-icon slot="start" name="fish"></ion-icon>
             <ion-label>Poissons</ion-label>
           </ion-item>
@@ -17,7 +17,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item button>
+          <ion-item button (click)="openBoatWithNameCoquillages()"></ion-item>>
             <ion-icon slot="start" name="fish"></ion-icon>
             <ion-label>Coquillage</ion-label>
           </ion-item>
@@ -25,7 +25,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item button>
+          <ion-item button (click)="openBoatWithNameCrustaces()"></ion-item>>
             <ion-icon slot="start" name="fish"></ion-icon>
             <ion-label>Crustacés</ion-label>
           </ion-item>

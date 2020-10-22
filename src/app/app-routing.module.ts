@@ -57,6 +57,14 @@ const routes: Routes = [
     path: 'cat-produits',
     loadChildren: () => import('./cat-produits/cat-produits.module').then( m => m.CatProduitsPageModule)
   },
+  {
+    path: 'produit/:id',
+    resolve: {
+      special: DataResolverService
+    },
+    loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
+  },
+
 
 ];
 

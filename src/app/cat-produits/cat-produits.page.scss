@@ -1,0 +1,13 @@
+ion-title{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: small;
+}
+.products-buttons-card ion-item{
+    --background: rgba(0, 0, 0, 0.4);
+}
+ion-card{
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 2em 0 2em 0;
+}
