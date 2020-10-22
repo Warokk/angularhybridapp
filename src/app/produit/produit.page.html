@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>produit</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <app-cart-header></app-cart-header>
+  <ion-header class="ion-no-border">
+    <ion-title>
+      Choisissez vos {{ apiData[0].name }}
+    </ion-title>
+  </ion-header>
+  <ion-card class="product-choice-card">
+    <ion-item button>
+      <ion-icon slot="start" name="fish"></ion-icon>
+      <ion-label>Poissons</ion-label>
+    </ion-item>
+    <ion-item button>
+      <ion-icon slot="start" name="fish"></ion-icon>
+      <ion-label>Poissons</ion-label>
+    </ion-item>
+  </ion-card>
 </ion-content>

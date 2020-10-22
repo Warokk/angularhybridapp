@@ -28,15 +28,15 @@ export class CatProduitsPage implements OnInit {
 
   openCatWithNamePoissons() {
     this.dataService.setData(13, this.poissons);
-    this.router.navigateByUrl('/product/13');
+    this.router.navigateByUrl('/produit/13');
   }
   openCatWithNameCoquillages() {
     this.dataService.setData(14, this.coquillage);
-    this.router.navigateByUrl('/product/14');
+    this.router.navigateByUrl('/produit/14');
   }
   openCatWithNameCrustaces() {
     this.dataService.setData(15, this.crustaces);
-    this.router.navigateByUrl('/product/15');
+    this.router.navigateByUrl('/produit/15');
   }
 
 }
