@@ -1,0 +1,28 @@
+ion-card-header{
+    align-items: center;
+}
+ion-card-header ion-img{
+    width: 50%;
+    display: block;
+}
+.bateau-desc span{
+    display: block;
+}
+p{
+    text-align: center;
+    color: black;
+    padding: 2em;
+}
+ion-card{
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 2em 0 2em 0;
+}
+ion-title{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+ion-header{
+    padding:2em;
+}
