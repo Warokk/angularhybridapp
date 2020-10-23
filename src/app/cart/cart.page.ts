@@ -9,13 +9,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CartPage implements OnInit {
   data: any;
-
+  numbers = [];
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     if (this.route.snapshot.data['special']) {
       this.data = this.route.snapshot.data['special'];
     }
+    this.numbers = Array(5).fill(0).map((x,i)=>i);
   }
 
 }

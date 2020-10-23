@@ -11,7 +11,13 @@
     <ion-item *ngFor ="let product of data">
       <ion-icon slot="start" name="fish"></ion-icon>
       <ion-label>{{ product.name }}</ion-label>
-      <div slot="end">
+      <div slot="end" style="display: block;">
+        <ion-item>
+          <ion-label>Qté</ion-label>
+          <ion-select value = 1 okText="Choisir" cancelText="Annuler">
+            <ion-select-option *ngFor="let number of numbers">{{ number }}</ion-select-option>
+          </ion-select>
+        </ion-item>
         {{ product.price }}€
       </div>
     </ion-item>
