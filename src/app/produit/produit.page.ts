@@ -2,6 +2,8 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { File } from '@ionic-native/file/ngx';
+import { DataService } from '../services/data.service';
+
 
 @Component({
   selector: 'app-produit',
@@ -13,7 +15,8 @@ export class ProduitPage implements OnInit {
   data: any;
   apiData: {};
   hideMe = true;
-  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient, private render: Renderer2, private file: File) { }
+  products=[];
+  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient, private render: Renderer2, private file: File, private dataService: DataService) { }
 
   ngOnInit() {
 
@@ -40,10 +43,16 @@ export class ProduitPage implements OnInit {
 
   addToCart(controlToShow, product){
     this.render.setStyle(controlToShow, 'visibility', 'visible');
-    this.file.writeFile("assets/json", 'cart.json', JSON.stringify(product));
+    this.products.push(product);
   }
   removeFromCart(controlToShow,product){
     this.render.setStyle(controlToShow, 'visibility', 'hidden');
+    const index = this.products.indexOf(product);
+    this.products.splice(index,1);
+  }
+  openCartWithProducts(){
+    this.dataService.setData(20, this.products);
+    this.router.navigateByUrl('/cart/20');
   }
 
 }

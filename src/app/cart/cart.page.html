@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>cart</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="app-toolbar">
+      <ion-button slot="start" routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+      <ion-title>Le bateau de Thibault</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card class="product-choice-card" >
+    <ion-item *ngFor ="let product of data">
+      <ion-icon slot="start" name="fish"></ion-icon>
+      <ion-label>{{ product.name }}</ion-label>
+      <div slot="end">
+        {{ product.price }}€
+      </div>
+    </ion-item>
+  </ion-card>  
 </ion-content>

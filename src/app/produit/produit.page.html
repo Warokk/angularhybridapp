@@ -1,9 +1,24 @@
 <ion-content>
-  <app-cart-header></app-cart-header>
   <ion-header class="ion-no-border">
-    <ion-title>
-      Choisissez vos {{ data.name }}
-    </ion-title>
+    <ion-toolbar class="test">
+      <ion-button slot="start" routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+      <ion-button slot="end" (click)="openCartWithProducts()">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+      <ion-title>Le bateau de Thibault</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="toolbar-header">
+      <ion-button button routerLink="/cat-produits">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <ion-title>
+        Choisissez vos {{ data.name }}
+      </ion-title>
+    </ion-toolbar>
   </ion-header>
   <ion-card class="product-choice-card" >
     <ion-item *ngFor ="let product of apiData">
