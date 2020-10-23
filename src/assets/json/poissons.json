@@ -1,0 +1,86 @@
+[
+    {
+        "id": 12,
+        "name": "Aile de raie",
+        "category": 0,
+        "price": 10.0,
+        "unit": "kg",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Pêche à la corde",
+        "owner": "tig"
+    },
+    {
+        "id": 3,
+        "name": "Bar de ligne",
+        "category": 0,
+        "price": 30.0,
+        "unit": "kg",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Plus de 1.5kg le poisson",
+        "owner": "tig"
+    },
+    {
+        "id": 2,
+        "name": "Bar de ligne portion",
+        "category": 0,
+        "price": 10.0,
+        "unit": "pièce",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Environ 550-700g la pièce",
+        "owner": "tig"
+    },
+    {
+        "id": 1,
+        "name": "Filet Bar de ligne",
+        "category": 0,
+        "price": 7.0,
+        "unit": "2 filets",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "environ 300g",
+        "owner": "tig"
+    },
+    {
+        "id": 5,
+        "name": "Filet Julienne",
+        "category": 0,
+        "price": 19.0,
+        "unit": "kg",
+        "availability": false,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Pêche à la corde",
+        "owner": "tig"
+    },
+    {
+        "id": 4,
+        "name": "Lieu jaune de ligne",
+        "category": 0,
+        "price": 12.0,
+        "unit": "kg",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Environ 550-700g la portion",
+        "owner": "tig"
+    },
+    {
+        "id": 6,
+        "name": "Moules de pêche",
+        "category": 1,
+        "price": 7.0,
+        "unit": "kg",
+        "availability": true,
+        "sale": true,
+        "discount": 5.0,
+        "comments": "",
+        "owner": "tig"
+    }
+]

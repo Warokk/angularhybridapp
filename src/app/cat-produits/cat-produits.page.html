@@ -1,5 +1,12 @@
 <ion-content>
-  <app-cart-header></app-cart-header>
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="toolbar">
+      <ion-button slot="start" routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+      <ion-title>Le bateau de Thibault</ion-title>
+    </ion-toolbar>
+  </ion-header>
   <ion-header class="ion-no-border">
     <ion-title>
       Choisissez vos produits
@@ -9,7 +16,7 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-item button (click)="openBoatWithNamePoissons()">
+          <ion-item button (click)="openCatWithNamePoissons()">
             <ion-icon slot="start" name="fish"></ion-icon>
             <ion-label>Poissons</ion-label>
           </ion-item>
@@ -17,7 +24,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item button (click)="openBoatWithNameCoquillages()">
+          <ion-item button (click)="openCatWithNameCoquillages()">
             <ion-icon slot="start" name="fish"></ion-icon>
             <ion-label>Coquillage</ion-label>
           </ion-item>
@@ -25,7 +32,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item button (click)="openBoatWithNameCrustaces()">
+          <ion-item button (click)="openCatWithNameCrustaces()">
             <ion-icon slot="start" name="fish"></ion-icon>
             <ion-label>Crustacés</ion-label>
           </ion-item>

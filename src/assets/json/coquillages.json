@@ -1,0 +1,86 @@
+[
+    {
+        "id": 10,
+        "name": "Bouquets cuits",
+        "category": 1,
+        "price": 8.0,
+        "unit": "100g",
+        "availability": false,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Hors saison, pêche à l'épuisette",
+        "owner": "tig"
+    },
+    {
+        "id": 7,
+        "name": "Huitres N°2 St Vaast",
+        "category": 1,
+        "price": 9.5,
+        "unit": "Dz",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "",
+        "owner": "tig"
+    },
+    {
+        "id": 8,
+        "name": "Huitres N°2 St Vaast",
+        "category": 1,
+        "price": 38.0,
+        "unit": "4 Dz",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "",
+        "owner": "tig"
+    },
+    {
+        "id": 13,
+        "name": "Huîtres N°2 OR St Vaast",
+        "category": 1,
+        "price": 12.0,
+        "unit": "Dz",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Médaille d'or Salon Agriculture",
+        "owner": "tig"
+    },
+    {
+        "id": 14,
+        "name": "Huîtres N°2 OR St Vaast",
+        "category": 1,
+        "price": 24.0,
+        "unit": "2 Dz",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Médaille d'or salon agriculture",
+        "owner": "tig"
+    },
+    {
+        "id": 15,
+        "name": "Huîtres N°2 OR St Vaast",
+        "category": 1,
+        "price": 48.0,
+        "unit": "4 Dz",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "Médaille d'or salon agriculture",
+        "owner": "tig"
+    },
+    {
+        "id": 16,
+        "name": "Huîtres N°2 St Vaast",
+        "category": 1,
+        "price": 19.0,
+        "unit": "2 Dz",
+        "availability": true,
+        "sale": false,
+        "discount": 0.0,
+        "comments": "",
+        "owner": "tig"
+    }
+]

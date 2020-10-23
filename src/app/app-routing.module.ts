@@ -64,6 +64,14 @@ const routes: Routes = [
     },
     loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
   },
+  {
+    path: 'cart/:id',
+    resolve: {
+      special: DataResolverService
+    },
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
+
 
 
 ];
